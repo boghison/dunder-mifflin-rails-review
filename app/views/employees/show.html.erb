@@ -1,0 +1,7 @@
+<h1><%=@employee.name%></h1>
+<img src="<%=@employee.img_url%>" height="200">
+<p>Alias: <%=@employee.alias%></p>
+<p>Title: <%=@employee.title%></p>
+<p>Office: <%=@employee.office%></p>
+<p>Dog: <%=if @employee.dog then link_to @employee.dog.name, dog_path(@employee.dog) end%></p>
+<a href="<%=edit_employee_path(@employee)%>">Edit</a>
